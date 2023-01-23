@@ -137,10 +137,9 @@ Sub MyEventReceiver()
    			MBLEFT=0
    		end if
    		
-   		if iMouseWheel() Then
-   		   MWHEEL=iMouseWheel()
-   		   Print "No funciona?:";iMouseWheel()
-   		End If
+   		'if iMouseWheel() Then
+   		   MWHEEL=iMouseWheel()*2
+   		'End If
    		
    		'If iMouseDown(IRR_LMOUSE_BUTTON)=0 Then
    			MOUSEX=iMouseX()

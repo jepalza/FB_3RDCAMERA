@@ -55,9 +55,11 @@ DIM MeshTexture as irr_Texture
 ' variables para la camara principal
 DIM Camera as irr_Camera
 
-' drivertype,Width,Height,bits,fullscreen
-' shadows,dontignoreinput,vsyncenabled,devicetype,doublebufferenabled,antialiasenabled,highprecisionfpu  
-iIrr3DAdvanced( irr_EDT_OPENGL,     800, 600, 32, FALSE,     FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE )
+' windowID en caso de emplear ventanas windows8 (createwindowexa)
+' 	WindowID,drivertype,Width,Height,bits,fullscreen
+' 				shadows,dontignoreinput,vsyncenabled,devicetype,doublebufferenabled,antialiasenabled,highprecisionfpu  
+iIrr3DAdvanced(0, irr_EDT_OPENGL, 800, 600, 32, FALSE,  _
+						   FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE )
 'iIrr3D( 640, 480, 32, FALSE  )
 
 iAppTitle( "Camara WOW" )
